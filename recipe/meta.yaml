@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/bayesplot_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/bayesplot/bayesplot_{{ version }}.tar.gz
-  sha256: 918a32740c48a38ce1e7b1f01cf03728105bee7c3e6b6d4e49d71d945f7e13b8
+  sha256: a7e4ab1439f1164378f494ffadb9962c808898359474ccb3b447dde50566c946
 
 build:
   number: 0
