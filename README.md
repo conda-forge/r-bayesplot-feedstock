@@ -1,13 +1,13 @@
 About r-bayesplot
 =================
 
-Home: http://mc-stan.org/bayesplot
+Home: https://mc-stan.org/bayesplot
 
 Package license: GPL (>= 3)
 
 Feedstock license: BSD 3-Clause
 
-Summary: Plotting functions for posterior analysis, model checking, and MCMC diagnostics. The package is designed not only to provide convenient functionality for users, but also a common set of functions that can be easily used by developers working on a variety of R packages for Bayesian modeling, particularly (but not exclusively) packages interfacing with 'Stan'.
+Summary: Plotting functions for posterior analysis,  prior and posterior predictive checks, and MCMC diagnostics.  The package is designed not only to provide convenient functionality  for users, but also a common set of functions that can be easily used by  developers working on a variety of R packages for Bayesian modeling,  particularly (but not exclusively) packages interfacing with 'Stan'.
 
 
 
@@ -118,10 +118,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bgruening](https://github.com/bgruening/)
-* [@cbrueffer](https://github.com/cbrueffer/)
-* [@daler](https://github.com/daler/)
-* [@dbast](https://github.com/dbast/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
+* [@conda-forge/r](https://github.com/conda-forge/r/)
 
