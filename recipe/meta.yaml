@@ -1,4 +1,4 @@
-{% set version = "1.7.1" %}
+{% set version = "1.7.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bayesplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bayesplot/bayesplot_{{ version }}.tar.gz
-  sha256: 820ca9ca3258fc68333e75fd60898c0d0f08f513b66c161ca6159a54ad54006b
+  sha256: 94f1fbf137f0ce4fd5029c6c3239ba0c890223ae9aa9bb816ed5052cdd221e2b
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -52,13 +52,10 @@ test:
 about:
   home: https://mc-stan.org/bayesplot
   license: GPL (>= 3)
-  summary: Plotting functions for posterior analysis,  prior and posterior predictive checks,
-    and MCMC diagnostics.  The package is designed not only to provide convenient functionality  for
-    users, but also a common set of functions that can be easily used by  developers
-    working on a variety of R packages for Bayesian modeling,  particularly (but not
-    exclusively) packages interfacing with 'Stan'.
+  summary: Plotting functions for posterior analysis,  prior and posterior predictive checks, and MCMC diagnostics.  The package is designed not only to provide convenient functionality  for users, but also a common set of functions that can be easily used by  developers working on a variety of R packages for Bayesian modeling,  particularly
+    (but not exclusively) packages interfacing with 'Stan'.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
