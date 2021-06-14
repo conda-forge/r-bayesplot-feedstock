@@ -1,4 +1,4 @@
-{% set version = "1.8.0" %}
+{% set version = "1.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bayesplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bayesplot/bayesplot_{{ version }}.tar.gz
-  sha256: a605f9929e681593a3ef3ca9c836e713314994aaea00f359f71cfc42d151c948
+  sha256: d8d74201ea91fa5438714686ca22a947ec9375b6c12b0cfef010c57104b1aa2a
 
 build:
   merge_build_host: true  # [win]
