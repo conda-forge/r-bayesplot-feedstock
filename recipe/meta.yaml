@@ -23,15 +23,17 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-dplyr >=0.8.0
     - r-ggplot2 >=3.0.0
     - r-ggridges
     - r-glue
+    - r-posterior
     - r-reshape2
     - r-rlang >=0.3.0
-    - r-tibble
+    - r-tibble >=2.0.0
     - r-tidyselect
   run:
     - r-base
@@ -39,9 +41,10 @@ requirements:
     - r-ggplot2 >=3.0.0
     - r-ggridges
     - r-glue
+    - r-posterior
     - r-reshape2
     - r-rlang >=0.3.0
-    - r-tibble
+    - r-tibble >=2.0.0
     - r-tidyselect
 
 test:
