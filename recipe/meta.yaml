@@ -25,24 +25,26 @@ requirements:
   host:
     - r-base
     - r-dplyr >=0.8.0
-    - r-ggplot2 >=3.0.0
-    - r-ggridges
+    - r-ggplot2 >=3.4.0
+    - r-ggridges >=0.5.5
     - r-glue
     - r-posterior
     - r-reshape2
     - r-rlang >=0.3.0
     - r-tibble >=2.0.0
+    - r-tidyr
     - r-tidyselect
   run:
     - r-base
     - r-dplyr >=0.8.0
-    - r-ggplot2 >=3.0.0
-    - r-ggridges
+    - r-ggplot2 >=3.4.0
+    - r-ggridges >=0.5.5
     - r-glue
     - r-posterior
     - r-reshape2
     - r-rlang >=0.3.0
     - r-tibble >=2.0.0
+    - r-tidyr
     - r-tidyselect
 
 test:
