@@ -1,4 +1,4 @@
-{% set version = "1.11.1" %}
+{% set version = "1.12.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bayesplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bayesplot/bayesplot_{{ version }}.tar.gz
-  sha256: 4f71e67391e0135acd3e890989b87025f3f8160242f532a8e1a0ed74ed0f3830
+  sha256: b163e5a92e53fb62557500ad8595309fb17f95235206f0b535d7f41b0e8d5be9
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -25,24 +25,26 @@ requirements:
   host:
     - r-base
     - r-dplyr >=0.8.0
-    - r-ggplot2 >=3.0.0
-    - r-ggridges
+    - r-ggplot2 >=3.4.0
+    - r-ggridges >=0.5.5
     - r-glue
     - r-posterior
     - r-reshape2
     - r-rlang >=0.3.0
     - r-tibble >=2.0.0
+    - r-tidyr
     - r-tidyselect
   run:
     - r-base
     - r-dplyr >=0.8.0
-    - r-ggplot2 >=3.0.0
-    - r-ggridges
+    - r-ggplot2 >=3.4.0
+    - r-ggridges >=0.5.5
     - r-glue
     - r-posterior
     - r-reshape2
     - r-rlang >=0.3.0
     - r-tibble >=2.0.0
+    - r-tidyr
     - r-tidyselect
 
 test:
