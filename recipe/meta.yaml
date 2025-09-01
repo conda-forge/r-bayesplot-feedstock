@@ -1,4 +1,4 @@
-{% set version = "1.13.0" %}
+{% set version = "1.14.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bayesplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bayesplot/bayesplot_{{ version }}.tar.gz
-  sha256: bdeba8c1cfdf6737a5fddb3932b854323bcae82582e370278d57ef9266de50f7
+  sha256: 37d657a39d7115c76d7a86b8daca6160bc5caaa988dd9f9cfe1f51873b09724a
 
 build:
   number: 0
